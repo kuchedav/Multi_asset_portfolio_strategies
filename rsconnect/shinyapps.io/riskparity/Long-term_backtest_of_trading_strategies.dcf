@@ -1,0 +1,9 @@
+name: Long-term_backtest_of_trading_strategies
+account: riskparity
+server: shinyapps.io
+appId: 107677
+bundleId: 476334
+url: https://longtermbacktestoftradingstrategies.shinyapps.io/Long-term_backtest_of_trading_strategies/
+when: 1465469002.9564
+asMultiple: FALSE
+asStatic: FALSE

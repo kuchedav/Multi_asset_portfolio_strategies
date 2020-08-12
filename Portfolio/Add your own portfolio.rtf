@@ -1,0 +1,57 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1404\cocoasubrtf460
+{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+\paperw11905\paperh16837\margl1440\margr1440\vieww10800\viewh9900\viewkind0
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0\b\fs28 \cf0 \ul \ulc0 Add your own Strategy:\
+
+\b0\fs24 \ulnone \
+It is possible to add a new strategy by simply dropping the R-File in the \'93
+\b Strategies\'94 
+\b0 Folder.\
+\
+3 things that need to be respected to add a new strategy:\
+\
+\
+
+\fs28 \ul 1. Name:
+\fs24 \ulnone \
+The Name of the 
+\b R.file
+\b0  and the 
+\b function
+\b0  inside must have the same name.
+\fs28 \ul \
+
+\fs24 \ulnone \
+Example:\
+	funny.strategie_anwenden\
+\
+	funny.strategy	-	is the name of the strategy and will be displayed\
+	_anwenden	-	needs to be always the same\
+\
+
+\fs28 \ul 2. Input:
+\fs24 \ulnone \
+RAW.Data = xts Matrix of returns of indices\
+Lookback_distance = the amount of days that will be calculated, from today into the past.\
+lag Days = amount of days the algorithm waits until it invests in the calculated weights.\
+\
+\
+
+\fs28 \ul 3. Output:
+\fs24 \ulnone \
+List of two Matrixes\
+\
+
+\b first
+\b0  contains a xts matrix with all weights over the calculated period of time per index\
+	The weights output column names must equal the names of the input RAW.Data\
+
+\i 	colnames(weights.OUT) <- colnames(weights.IN)\
+
+\i0 \
+
+\b second
+\b0  list contains an xts vector of the portfolio returns}
